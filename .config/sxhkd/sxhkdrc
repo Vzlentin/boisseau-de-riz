@@ -42,13 +42,24 @@ super + F2
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# change volume
+# volume
+
+XF86AudioMute
+	pulsemixer --toggle-mute
+
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5
 
 XF86AudioRaiseVolume
 	pulsemixer --change-volume +5
 
-XF86AudioLowerVolume
-	pulsemixer --change-volume -5
+# brightness
+
+XFB86MonBrightnessDown
+	xbacklight -dec 10
+
+XFB86MonBrightnessUp
+	xbacklight -inc 10
 
 # control spotify
 

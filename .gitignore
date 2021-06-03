@@ -15,6 +15,7 @@
 .gnupg/
 .local/lib/
 .local/share/
+.local/src/**/.git
 .pki
 .steam
 .vim
