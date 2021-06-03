@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# A dmenu wrapper script for system functions.
+
+cmds="\
+🔃 reboot	${reb:-loginctl reboot}
+🖥 shutdown	${shut:-loginctl poweroff}"
+
+choice="$(echo "$cmds" | cut -d'	' -f 1 | dmenu -l 5)" || exit 1
+
+`echo "$cmds" | grep "^$choice	" | cut -d '	' -f2-`

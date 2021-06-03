@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/Documents/Anime/
+cd "$(ls | dmenu -l 30)"
+cd "$(ls | dmenu -l 30)"
+mpv "$(ls *mkv *mp4 | dmenu -l 30)"
