@@ -16,17 +16,19 @@ super + r
 
 # web browser
 super + w
-	focus-or-run $BROWSER
-super + shift + w
 	$BROWSER
 
 # spotify
 super + s
-	focus-or-run spotify
+	focus-or-run "spotify"
 
 # discord
 super + c
 	discord
+
+# keepass
+super + k
+	focus-or-run "keepassxc"
 
 # audio mixer
 super + F1
