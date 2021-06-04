@@ -7,6 +7,9 @@
 
 alias ls='ls --color=auto'
 alias la='ls -la'
+alias vim='nvim'
+alias locate='plocate'
+alias p='sudo pacman'
 
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh

@@ -14,7 +14,7 @@ set icons
 cmd open ${{
     test -L $f && f=$(readlink -f $f)
     case $(file --mime-type $f -b) in
-        text/*) vim $fx;;
+        text/*) nvim $fx;;
 	image/*) sxiv $fx &;;
 	application/pdf) setsid -f zathura $fx >/dev/null 2>&1 ;;
         *) for f in $fx; do xdg-open $f > /dev/null 2> /dev/null & done;;

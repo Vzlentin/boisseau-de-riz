@@ -38,20 +38,24 @@ super + F1
 super + F2
 	dmenu-bluetooth
 
+# top
+super + F3
+	$TERMINAL -e "bash -ic gotop"
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
 # volume
 
-XF86AudioMute
-	pulsemixer --toggle-mute
-
 XF86AudioLowerVolume
 	pulsemixer --change-volume -5
 
 XF86AudioRaiseVolume
 	pulsemixer --change-volume +5
+
+XF86AudioMute
+	pulsemixer --toggle-mute
 
 # brightness
 
@@ -71,6 +75,9 @@ XF86AudioPrev
 
 XF86AudioNext
 	playerctl next spotify
+
+XF86AudioStop
+	killall -q spotify
 
 # print screen functions
 ctrl + Print
