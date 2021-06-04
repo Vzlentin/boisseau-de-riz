@@ -14,6 +14,10 @@ super + d
 super + r
 	$TERMINAL -e "bash -ic lf"
 
+# rice
+super + shift + r
+	$TERMINAL -e "bash -ic 'cd $HOME/.config && vim -p nvim/init.vim lf/lfrc sxhkd/sxhkdrc bspwm/bspwmrc'"
+
 # web browser
 super + w
 	$BROWSER
