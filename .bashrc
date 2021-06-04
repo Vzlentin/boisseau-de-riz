@@ -22,7 +22,7 @@ LF_ICONS=$(sed ~/.config/core/diricons \
 LF_ICONS=${LF_ICONS//$'\n'/:}
 export LF_ICONS
 
-export TERMINAL=/usr/bin/termite
+export TERMINAL=/usr/local/bin/st
 export BROWSER=/usr/bin/brave
 export PATH="${PATH}:${HOME}/.local/bin/"
 

@@ -31,9 +31,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'luna'
 
 " NERDTree
-" Start NERDTree and leave the cursor in it.
-" autocmd VimEnter * NERDTree | wincmd p
-
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
@@ -53,3 +50,5 @@ map <space> /
 nnoremap S :%s//g<Left><Left>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>

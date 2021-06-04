@@ -12,11 +12,11 @@ super + d
 
 # file browser
 super + r
-	$TERMINAL -e "bash -ic lf"
+	$TERMINAL -e bash -ic lf
 
 # rice
 super + shift + r
-	$TERMINAL -e "bash -ic 'cd $HOME/.config && vim -p nvim/init.vim lf/lfrc sxhkd/sxhkdrc bspwm/bspwmrc'"
+	$TERMINAL -e bash -ic 'cd $HOME/.config && vim -p nvim/init.vim lf/lfrc $HOME/.bashrc $HOME/.xinitrc sxhkd/sxhkdrc bspwm/bspwmrc'
 
 # web browser
 super + w
@@ -24,7 +24,7 @@ super + w
 
 # spotify
 super + s
-	focus-or-run "spotify"
+	focus-or-run spotify
 
 # discord
 super + c
@@ -32,11 +32,11 @@ super + c
 
 # keepass
 super + k
-	focus-or-run "keepassxc"
+	focus-or-run keepassxc
 
 # audio mixer
 super + F1
-	$TERMINAL -e "bash -ic pulsemixer"
+	$TERMINAL -e bash -ic pulsemixer
 
 # bluetooth
 super + F2
@@ -44,7 +44,7 @@ super + F2
 
 # top
 super + F3
-	$TERMINAL -e "bash -ic gotop"
+	$TERMINAL -e bash -ic gotop
 
 # make sxhkd reload its configuration files:
 super + Escape
