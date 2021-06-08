@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " General
@@ -21,9 +22,6 @@ set encoding=utf-8
 set nobackup
 set nowb
 set noswapfile
-
-" Misc
-set t_Co=256
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
@@ -50,5 +48,5 @@ map <space> /
 nnoremap S :%s//g<Left><Left>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
+nnoremap H :tabprevious<CR>
+nnoremap L :tabnext<CR>

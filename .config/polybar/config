@@ -144,13 +144,11 @@ type = custom/script
 exec = ~/.config/polybar/scripts/bluetooth.sh
 interval = 2
 click-left = exec dmenu-bluetooth
-click-right = exec ~/.config/polybar/scripts/toggle_bluetooth.sh
 format-padding = 1
 format-foreground = #ffffff
 
 [module/battery]
 type = internal/battery
-full-at = 99
 battery = BAT1
 adapter = ACAD
 
@@ -162,7 +160,7 @@ format-discharging = <ramp-capacity> <label-discharging>
 label-discharging = %percentage%%
 label-discharging-font = 2
 
-format-full = <ramp-capacity> <label-full>
+format-full = 
 label-full = %percentage%%
 label-full-font = 2
 

@@ -36,7 +36,7 @@ super + k
 
 # audio mixer
 super + F1
-	$TERMINAL -e bash -ic pulsemixer
+	$TERMINAL -e bash -ic alsamixer
 
 # bluetooth
 super + F2
@@ -52,14 +52,14 @@ super + Escape
 
 # volume
 
-XF86AudioLowerVolume
-	pulsemixer --change-volume -5
+{super + Next, XF86AudioLowerVolume}
+	amixer -q sset Master 5%-
 
-XF86AudioRaiseVolume
-	pulsemixer --change-volume +5
+{super + Prior, XF86AudioRaiseVolume}
+	amixer -q sset Master 5%+
 
-XF86AudioMute
-	pulsemixer --toggle-mute
+{super + shift + m, XF86AudioMute}
+	amixer -q sset Master toggle
 
 # brightness
 
@@ -71,7 +71,7 @@ XFB86MonBrightnessUp
 
 # control spotify
 
-XF86AudioPlay
+{super + p, XF86AudioPlay}
 	playerctl play-pause spotify
 
 XF86AudioPrev

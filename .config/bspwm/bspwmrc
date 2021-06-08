@@ -16,6 +16,7 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Screenkey manage=off
 
+sleep 0.3
 $HOME/.config/polybar/launch.sh
 wal -R
 picom &

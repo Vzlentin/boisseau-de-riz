@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/Documents/Scans
+cd "$(ls | dmenu -l 30)"
+cd "$(ls -v | dmenu -l 30)"
+ls -v | sxiv -
